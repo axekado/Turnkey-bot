@@ -11,7 +11,7 @@ try:
     QT_AVAILABLE = True
 except ImportError:
     QT_AVAILABLE = False
-
+ 
 # Rest of the code wrapped in appropriate checks
 if QT_AVAILABLE:
     class LogSignals(QObject):
