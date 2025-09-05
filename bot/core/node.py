@@ -37,7 +37,7 @@ class Grass(GrassWs, GrassRest, FailureCounter):
 
         self.db: AccountsDB = db
 
-        self.session: aiohttp.ClientSession = aiohttp.ClientSession(trust_env=True,
+        self.session: aiohttp.ClientSession = aiohttp.ClientSession(trust_env=True, 
                                                                     connector=aiohttp.TCPConnector(ssl=False))
 
         self.proxies: List[str] = []
